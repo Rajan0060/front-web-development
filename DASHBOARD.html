@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Dashboard</title>
+		<link rel="stylesheet"  type = "text/css" href="maincss.css">
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="R:\web development\my work\WE_HAVE_IT_ALL\jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+				$("#magni").click(function(){
+
+						$("#dash_src").css({"width":"150px","transition":"width 0.3s linear"});
+
+						$("#magni").attr("class","fa fa-close");
+
+						$("#magni").click(function(){
+							$("#dash_src").val("");
+						});
+				});
+				$("#dash_src").mouseout(function(){
+
+						$("#dash_src").css({"width":"0px","transition":"width 0.3s linear",
+							"transition-delay":"20s"});
+
+						var time =setTimeout(function(){$("#magni").attr("class","fa fa-close");},15000);
+				});
+
+			});
+		</script>
+</head>
+
+<body id="Dashboard">
+		
+		 <header id ="dash_head">
+		 		
+		 		<ul id = "head_nav">
+					<li>ACCOUNTNAME</li>
+					<li class ="ham">
+						<i class="fa fa-reorder"></i>
+						<div id="ham_menu">
+							<a href=""><i class="fa fa-cog"></i>settings</a>
+							<a href="R:\web development\my work\WE_HAVE_IT_ALL\HOME_SCREEN .HTML">logout</a>
+						<li><input id="dash_src" type="text" name="search"><i id="magni" class="fa fa-search"></i></li>
+						</div>
+					</li>
+					
+
+		</header>
+		
+		</div>
+		
+		<section id="dash_sec">
+				
+				<ul id="sec_nav">
+					<li><i class="fa fa-search"></i></li>
+					<li><input class="mlp" type="text" name=""></li>
+					<li>popular</li>					
+					<li>favorite</li>					
+					<li>latest</li>					
+				</ul><hr>
+				<div class="main_content">
+					<div class="videos"><img src="R:\web development\my work\WE_HAVE_IT_ALL\images\2.jpg"></div>
+					<div class="videos"><img src="R:\web development\my work\WE_HAVE_IT_ALL\images\3.jpg"></div>
+					<div class="videos"><img src="R:\web development\my work\WE_HAVE_IT_ALL\images\4.jpg"></div>
+					<div class="videos"><img src="R:\web development\my work\WE_HAVE_IT_ALL\images\5.jpg"></div>
+					<div class="videos"><img src="R:\web development\my work\WE_HAVE_IT_ALL\images\6.jpg"></div>
+					<div class="videos"><img src="R:\web development\my work\WE_HAVE_IT_ALL\images\7.jpg"></div>
+					<div class="videos"><img src="R:\web development\my work\WE_HAVE_IT_ALL\images\8.jpg"></div>
+					<div class="videos"><img src="R:\web development\my work\WE_HAVE_IT_ALL\images\9.jpg"></div>
+					
+				</div>
+
+		</section>
+
+		<footer id="dash_foot">
+
+				<ul id="dash_more">
+					<li>Feedback <i class="	fa fa-address-card"></i></li>	
+					<li>About <i class="fa fa-child"></i></li>	
+					<li>Contact us <i class="fa fa-wechat"></i></li>	
+					<li>Follow us on..!</li>
+				</ul>
+
+				<a href=""><span id = "dash_copy">&copy; Rajat Sliwal</span></a>
+
+				<ul id = "dash_fol">
+					<li><a href=""><i class="fa fa-instagram" "></i></a></li>
+					<li><a href=""><i class="fa fa-facebook" ></i></a></li>
+					<li><a href=""><i class="fa fa-github" ></i></a></li>
+					<li><a href=""><i class="fa fa-google-plus-square" ></i></a></li>
+				</ul>
+			
+		</footer>
+ 
+</body>
+</html>	
